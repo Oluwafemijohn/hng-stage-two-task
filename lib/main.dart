@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
 
 bool showText = false;
 String _fName = "";
-// var _phone;
 TextEditingController fNameCon = new TextEditingController();
-// final phoneCon = new TextEditingController();
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
@@ -41,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
             TextField(
                 controller: fNameCon,
                 decoration: InputDecoration(
-                  hintText: "Enter your first name",
+                  hintText: "Enter your full name",
                   contentPadding: new EdgeInsets.all(20.0),
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8)),
